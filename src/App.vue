@@ -68,7 +68,7 @@ const convert = new CryptoConvert();
           this.result = convert.ETH.BTC(this.amount);
         }
         else if (this.cryptoFirst == 'ETH' && this.cryptoSecond == 'USDT') {
-          this.result = convert.UTH.USDT(this.amount);
+          this.result = convert.ETH.USDT(this.amount);
         }
         else if (this.cryptoFirst == 'USDT' && this.cryptoSecond == 'BTC') {
           this.result = convert.USDT.BTC(this.amount);
