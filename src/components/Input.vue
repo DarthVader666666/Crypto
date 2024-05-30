@@ -5,6 +5,7 @@
         </li>
         <li>
             <button @click="convert()">Convert</button>    
+            <button @click="favorite()" className="fav-button">Add to Favorite</button>
         </li>
     </ul>
 </template>
@@ -12,6 +13,10 @@
 <script>
 export default {
     props: {
+        favorite: {
+            type: Function,
+            required: true
+        },
         changeAmount: {
             type: Function,
             required: true
@@ -54,4 +59,9 @@ export default {
         list-style: none;
         padding: 0;
     }
+
+    button.fav-button {
+        margin-left: 20px;
+    }
+
 </style>
